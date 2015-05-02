@@ -2,6 +2,8 @@
 
 Simple assert function that throws provided error object.
 
+[![Build Status](https://travis-ci.org/iefserge/assert-error.svg)](https://travis-ci.org/iefserge/assert-error)
+
 ## USAGE
 
 ```js
