@@ -1,6 +1,6 @@
 {
   "name": "assert-error",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Basic assert function that throws provided error object",
   "main": "index.js",
   "scripts": {
