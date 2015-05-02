@@ -47,7 +47,7 @@ test('should throw when there are no error object', function(t) {
       assert(true);
     } catch (e) {
       t.ok(e);
-      t.equal(e.message, 'unknown assert error');
+      t.equal(e.message, 'error required');
       throw e;
     }
   });
@@ -57,7 +57,7 @@ test('should throw when there are no error object', function(t) {
       assert(false);
     } catch (e) {
       t.ok(e);
-      t.equal(e.message, 'unknown assert error');
+      t.equal(e.message, 'error required');
       throw e;
     }
   });

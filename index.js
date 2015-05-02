@@ -14,7 +14,7 @@
 
 module.exports = function(value, error) {
   if (!error) {
-    throw new Error('unknown assert error');
+    throw new Error('error required');
   }
 
   if (value) return;
