@@ -1,0 +1,26 @@
+{
+  "name": "assert-error",
+  "version": "0.1.0",
+  "description": "Basic assert function that throws provided error object",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:iefserge/assert-error.git"
+  },
+  "keywords": [
+    "assert",
+    "error"
+  ],
+  "author": "Sergii Iefremov <iefserge@runtimejs.org>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/iefserge/assert-error/issues"
+  },
+  "homepage": "https://github.com/iefserge/assert-error",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
