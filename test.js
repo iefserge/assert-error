@@ -16,8 +16,8 @@ var test = require('tape');
 var assert = require('./');
 
 test('assert using correct error object', function(t) {
-  var error = new Error();
-  error.code = 200;
+  var error = new Error('my error');
+  error.code = 404;
 
   t.doesNotThrow(function() {
     assert(true, error);
@@ -32,7 +32,14 @@ test('assert using correct error object', function(t) {
   });
 
   t.throws(function() {
-    assert(0, error);
+    try {
+      assert(0, error);
+    } catch (e) {
+      t.ok(e);
+      t.equal(e.message, 'my error');
+      t.equal(e.code, 404);
+      throw e;
+    }
   });
 
   t.end();

@@ -8,7 +8,11 @@ Simple assert function that throws provided error object.
 
 ```js
 var assert = require('assert-error');
-assert(true === true, new Error('my error'));
+
+var myError = new Error('my error');
+myError.code = 404;
+
+assert(true === true, myError);
 ```
 
 ##LICENSE
